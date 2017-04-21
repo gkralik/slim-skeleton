@@ -1,3 +1,4 @@
 /vendor/
+/migrations/*
 dev_rfc.trc
 .env
