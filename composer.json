@@ -25,8 +25,8 @@
         }
     },
 	"scripts": {
-        "start": "php -S 0.0.0.0:8080 -t public public/index.php",
-        "test": "phpunit"
+        "start": "APP_ENVIRONMENT=development COMPOSER_PROCESS_TIMEOUT=0 php -S 0.0.0.0:8080 -t public public/index.php",
+        "test": "APP_ENVIRONMENT=testing phpunit"
 	}
 
 }
