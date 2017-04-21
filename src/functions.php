@@ -17,6 +17,21 @@ if (!function_exists('env')) {
     }
 }
 
+if (!function_exists('get_app_environment')) {
+    /**
+     * Get current application environment.
+     *
+     * Reads the APP_ENVIRONMENT env variable. If the env var is not set,
+     * returns 'production' as default value.
+     *
+     * @return string Current application environment.
+     */
+    function get_app_environment()
+    {
+        return env('APP_ENVIRONMENT', 'production');
+    }
+}
+
 if (!function_exists('current_ip')) {
     /**
      * Returns the current request's IP address.
